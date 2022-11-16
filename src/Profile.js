@@ -1,6 +1,5 @@
 import { Button } from "@mui/material";
 import "./Profile.css";
-import "./Footer.js";
 
 const Profile = ({ user }) => {
   return (

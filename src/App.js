@@ -1,9 +1,13 @@
 import "./App.css";
 import { Post } from "./Post";
-import { Footer } from "./Footer";
 import { Modal, Button, Input } from "@mui/material";
 import { useEffect, useRef, useState } from "react";
 import { auth, db } from "./firebase";
+import { PostUpload } from "./PostUpload";
+import { Home } from "./Home";
+import { Search } from "./Search";
+import { Notifications } from "./Notifications";
+import { Profile } from "./Profile";
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -27,6 +31,7 @@ function App() {
     observer.observe(postRef.current);
   }, 2000);
 
+  //auth
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
@@ -41,12 +46,13 @@ function App() {
     };
   }, []);
 
+  //snapshot for everytime new post added on db collection
   useEffect(() => {
     db.collection("posts")
       .orderBy("timestamp", "desc")
       .onSnapshot((snapshot) => {
         setPosts(snapshot.docs.map((doc) => doc.data()));
-      }); //snapshot for everytime new post added on db collection
+      });
   }, []);
 
   function signUp(e) {
@@ -139,7 +145,13 @@ function App() {
       </div>
       <div className="app__footer">
         {user ? (
-          <Footer user={user} />
+          <>
+            <Home className="footer__homeButtonDiv" />
+            <Search className="footer_searchButtonDiv" />
+            <PostUpload className="footer__postUploadButtonDiv" user={user} />
+            <Notifications className="footer__notificationsDiv" user={user} />
+            <Profile className="footer__profileDiv" user={user} />
+          </>
         ) : (
           <center>
             <h1>Sorry u need to login</h1>

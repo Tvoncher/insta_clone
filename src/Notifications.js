@@ -1,7 +1,6 @@
 import { Button, Modal } from "@mui/material";
 import { useState } from "react";
 import "./Notifications.css";
-import "./Footer.js";
 
 const Notifications = ({ user }) => {
   const [open, setOpen] = useState(false);

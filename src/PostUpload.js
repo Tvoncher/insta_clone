@@ -2,7 +2,6 @@ import { Button, Modal } from "@mui/material";
 import { useState } from "react";
 import "./PostUpload.css";
 import { storage, db } from "./firebase";
-import "./Footer.js";
 import { serverTimestamp } from "firebase/firestore";
 const reduce = require("image-blob-reduce")();
 
