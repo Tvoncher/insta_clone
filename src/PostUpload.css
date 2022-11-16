@@ -1,0 +1,47 @@
+.postUploadDiv {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  background-color: rgb(114, 116, 241);
+  left: 15%;
+  top: 10%;
+}
+
+.postUploadDiv__header {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  height: 10%;
+}
+
+.postUploadDiv__header h2 {
+  flex: 3;
+  align-self: center;
+}
+
+.postUploadDiv__header img {
+  width: 20%;
+}
+
+.postUploadDiv__header__button {
+  flex: 0.75;
+}
+
+.postUploadDivBody {
+  height: 100%;
+}
+
+@media (orientation: portrait) {
+  .postUploadDiv {
+    position: fixed;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(114, 116, 241);
+    left: 0%;
+    top: 10%;
+  }
+
+  .postUploadDiv__header {
+    display: flex;
+  }
+}

@@ -1,0 +1,23 @@
+.notifications__modalDiv {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  background-color: rgb(114, 116, 241);
+  left: 15%;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (orientation: portrait) {
+  .notifications__modalDiv {
+    position: fixed;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(114, 116, 241);
+    left: 0%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+  }
+}
