@@ -138,6 +138,29 @@ body {
   width: 25%;
 }
 
+.loadingDiv {
+  width: 80vw;
+  height: 12vh;
+}
+.loadingDiv h1 {
+  animation: loadingAnim 2s infinite;
+}
+
+@keyframes loadingAnim {
+  0% {
+    opacity: 0.3;
+    transform: translateX(-200px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 0.3;
+    transform: translateX(-200px);
+  }
+}
+
 @media (orientation: portrait) {
   .app__footer {
     display: flex;
@@ -147,5 +170,28 @@ body {
   }
   .app__footer img {
     width: 40%;
+  }
+  .loadingDiv {
+    width: 100vw;
+    height: 9vh;
+  }
+
+  .loadingDiv h1 {
+    animation: loadingAnim 2s infinite;
+  }
+
+  @keyframes loadingAnim {
+    0% {
+      opacity: 0.3;
+      transform: translateX(-200px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(200px);
+    }
+    100% {
+      opacity: 0.3;
+      transform: translateX(-200px);
+    }
   }
 }

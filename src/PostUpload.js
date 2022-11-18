@@ -20,11 +20,10 @@ const PostUpload = ({ user }) => {
   const handleUpload = () => {
     if (loading) return;
     setLoading(true);
-    console.log(img.size);
+
     reduce.toBlob(img, { max: 750 }).then((blob) => {
       const uploadTask = storage.ref(`images/${img.name}`).put(blob);
       uploadTask.on("component_loaded", (snapshot) => {
-        console.log(blob.size);
         storage
           .ref("images")
           .child(img.name)

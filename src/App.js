@@ -143,6 +143,16 @@ function App() {
           </div>
         ))}
       </div>
+
+      {counter - 1 >= posts.length ? (
+        <div className="loadingDiv">
+          <center>
+            <h1>loading</h1>
+          </center>
+        </div>
+      ) : (
+        <></>
+      )}
       <div className="app__footer">
         {user ? (
           <>
