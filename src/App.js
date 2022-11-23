@@ -22,7 +22,7 @@ function App() {
   //callback for intersectionObserver
   const callbackFunction = (entries) => {
     if (entries[0].isIntersecting) {
-      setCounter((counter += 1));
+      setCounter((counter) => counter + 1);
     }
   };
   const observer = new IntersectionObserver(callbackFunction);
