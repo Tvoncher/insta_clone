@@ -1,4 +1,4 @@
-import { Button, Modal } from "@mui/material";
+import { Modal } from "@mui/material";
 import { useState } from "react";
 import "./Notifications.css";
 
@@ -19,12 +19,11 @@ const Notifications = ({ user }) => {
         </div>
       </Modal>
 
-      <Button onClick={() => setOpen(true)}>
-        <img
-          src="https://www.kindpng.com/picc/m/169-1694281_heart-symbol-computer-icons-heart-icon-instagram-png.png"
-          alt=""
-        />
-      </Button>
+      <img
+        onClick={() => setOpen(true)}
+        src="/images/icons/notifications.png"
+        alt=""
+      />
     </div>
   );
 };

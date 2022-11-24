@@ -92,12 +92,11 @@ const PostUpload = ({ user }) => {
         </div>
       </Modal>
 
-      <Button onClick={() => setOpen(true)}>
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/6165/6165283.png"
-          alt="something went wrong"
-        />
-      </Button>
+      <img
+        onClick={() => setOpen(true)}
+        src="/images/icons/post.png"
+        alt="something went wrong"
+      />
     </div>
   );
 };

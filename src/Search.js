@@ -19,12 +19,12 @@ const Search = () => {
           </Button>
         </div>
       </Modal>
-      <Button onClick={() => setOpen(true)}>
-        <img
-          src="https://www.pngitem.com/pimgs/m/329-3297291_pc-website-magnifying-glass-ig-search-icon-png.png"
-          alt="something wrong"
-        />
-      </Button>
+
+      <img
+        onClick={() => setOpen(true)}
+        src="/images/icons/search.png"
+        alt="something wrong"
+      />
     </div>
   );
 };

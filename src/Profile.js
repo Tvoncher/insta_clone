@@ -1,19 +1,15 @@
-import { Button } from "@mui/material";
 import "./Profile.css";
 
 const Profile = ({ user }) => {
   return (
     <div>
-      <Button
+      <img
         onClick={() =>
           alert(`Sorry, ${user.displayName}, Im still working on this`)
         }
-      >
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png"
-          alt="nope"
-        />
-      </Button>
+        src="/images/icons/profile.png"
+        alt="nope"
+      />
     </div>
   );
 };

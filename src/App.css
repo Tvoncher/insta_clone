@@ -88,54 +88,22 @@ body {
 
 .app__footer {
   position: fixed;
+  display: flex;
   bottom: 0;
   background-color: white;
-  display: flex;
   height: 70px;
   width: 100%;
   object-fit: contain;
   border: 1px solid darkgray;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .app__footer img {
-  object-fit: contain;
-  width: 20%;
+  width: 100%;
+  height: 100%;
 }
-
-.footer__postUploadButtonDiv {
-  width: 20%;
-}
-.footer__postUploadButtonDiv img {
-  width: 25%;
-}
-
-.footer__homeButtonDiv {
-  width: 20%;
-}
-.footer__homeButtonDiv img {
-  width: 47%;
-}
-
-.footer_searchButtonDiv {
-  width: 20%;
-}
-.footer_searchButtonDiv img {
-  width: 25%;
-}
-
-.footer__notificationsDiv {
-  width: 20%;
-}
-.footer__notificationsDiv img {
-  width: 33%;
-}
-
-.footer__profileDiv {
-  width: 20%;
-}
-.footer__profileDiv img {
-  width: 25%;
+.app__footer img:hover {
+  cursor: pointer;
 }
 
 .loadingDiv {
@@ -163,14 +131,11 @@ body {
 
 @media (orientation: portrait) {
   .app__footer {
-    display: flex;
     padding-bottom: calc(env(safe-area-inset-bottom));
-    align-items: center;
     height: 40px;
+    gap: 12%;
   }
-  .app__footer img {
-    width: 40%;
-  }
+
   .loadingDiv {
     width: 100vw;
     height: 9vh;
