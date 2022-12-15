@@ -15,7 +15,7 @@ const Search = () => {
           </h3>
           <img src="https://i.imgflip.com/2ztqsn.jpg?a463272" alt="nope" />
           <Button variant="contained" onClick={() => setOpen(false)}>
-            Я все понял и осознал свою ошибку
+            Ok,I'll wait
           </Button>
         </div>
       </Modal>

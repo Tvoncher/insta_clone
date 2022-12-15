@@ -70,7 +70,7 @@ const PostUpload = ({ user }) => {
               />
             </Button>
           </div>
-          <div className="postUploadDivBody">
+          <div className="postUploadDivBody" style={{ height: "10%" }}>
             <form>
               <input
                 type="text"
