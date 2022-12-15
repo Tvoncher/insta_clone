@@ -6,6 +6,8 @@
 
 ### Some key points
 
+- to-do: add comments, likes.
+
 -I made this for learning purposes and fun
 
 -Obviously this copy is not 100% equal. And sure I'll add some other features somewhere in nearest future
