@@ -1,6 +1,6 @@
 # Just a copy of wellknown app
 
-## Please upload something :)
+## Please upload something :) just use random email and password
 
 ## Written with React,Firebase (and love)
 
