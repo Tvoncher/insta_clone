@@ -1,6 +1,6 @@
-# Just a copy of wellknown app
+# Just a copy of wellknown app. Please watch on mobile for better experience
 
-## Please upload something :) just use random email and password
+### Please upload something :) just use random email and password
 
 ## Written with React,Firebase (and love)
 
